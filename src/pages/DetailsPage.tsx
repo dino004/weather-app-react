@@ -1,12 +1,12 @@
-import { useNavigate } from "react-router-dom";
-import Button from "../components/Button";
+import MainNavigation from "../components/MainNavigation";
 
 const DetailsPage = () => {
-  const navigate = useNavigate();
   return (
     <>
-      <h1>Details pages</h1>
-      <Button onClick={() => navigate("/")}>go to main page</Button>
+          <MainNavigation />
+          <main className="container">
+              <h1>Details Page</h1>
+          </main>
     </>
   );
 };
